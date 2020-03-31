@@ -1,0 +1,20 @@
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.itemsCarouselCol {
+    padding: 0;
+}
+
+.itemHeader {
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+}
+
+.card-body {
+    text-align: left;
+}
