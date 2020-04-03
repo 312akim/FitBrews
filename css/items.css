@@ -18,3 +18,13 @@
 .card-body {
     text-align: left;
 }
+
+.row-content {
+    padding: 25px 0;
+    border-bottom: 1px ridge;
+}
+
+.carousel-item.active {
+    display: flex;
+    justify-content: space-around;
+}

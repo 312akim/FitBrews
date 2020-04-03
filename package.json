@@ -1,22 +1,21 @@
 {
-    "name": "fitbrews",
-    "version": "1.0.0",
-    "description": "Website for healthy trendy drink recipes.",
-    "main": "index.html",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "npm run lite",
-        "lite": "lite-server"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "lite-server": "^2.5.4"
-    },
-    "dependencies": {
-        "bootstrap": "^4.4.1",
-        "font-awesome": "^4.7.0",
-        "jquery": "^3.4.1",
-        "popper.js": "^1.16.1"
-    }
+  "name": "fitbrews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "Ronan Hess",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
 }
