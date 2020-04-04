@@ -53,8 +53,11 @@
                     </div>
                 </div>
             </div>
-
-            <h2 class="itemHeader">Item Name</h2>
+            <div class="itemHeader backgroundLight">
+                <h2 class="removeMargin">Item Name</h2>
+                <button class="my-4" id="saveRecipeButton">Save Recipe</button>
+            </div>
+            <hr class="categoryBreak">
         </header>
         <main>
             <div class="accordion" id="itemsAccordion">
@@ -62,7 +65,7 @@
                     <div class="card-header" id="headingNutrition">
                         <h2 class="mb-0"></h2>
                             <button
-                                class="btn btn-link collapsed"
+                                class="btn btn-link collapsed accordionHeader"
                                 type="button"
                                 data-toggle="collapse"
                                 data-target="#collapseNutrition"
@@ -86,11 +89,13 @@
                     </div>
                 </div>
 
+                <hr class="categoryBreak">
+
                 <div class="card">
                     <div class="card-header" id="headingDescription">
                         <h2 class="mb-0">
                             <button
-                                class="btn btn-link collapsed"
+                                class="btn btn-link collapsed accordionHeader"
                                 type="button"
                                 data-toggle="collapse"
                                 data-target="#collapseDescription"
@@ -113,11 +118,13 @@
                     </div>
                 </div>
 
+                <hr class="categoryBreak">
+
                 <div class="card">
                     <div class="card-header" id="headingIngredients">
                         <h2 class="mb-0">
                             <button
-                                class="btn btn-link collapsed"
+                                class="btn btn-link collapsed accordionHeader"
                                 type="button"
                                 data-toggle="collapse"
                                 data-target="#collapseIngredients"
@@ -144,11 +151,13 @@
                     </div>
                 </div>
 
+                <hr class="categoryBreak">
+
                 <div class="card">
                     <div class="card-header" id="headingDirections">
                         <h2 class="mb-0">
                             <button
-                                class="btn btn-link collapsed"
+                                class="btn btn-link collapsed accordionHeader"
                                 type="button"
                                 data-toggle="collapse"
                                 data-target="#collapseDirections"
@@ -181,11 +190,13 @@
                     </div>
                 </div>
 
+                <hr class="categoryBreak">
+
                 <div class="card">
                     <div class="card-header" id="headingReviews">
                         <h2 class="mb-0">
                             <button
-                                class="btn btn-link collapsed"
+                                class="btn btn-link collapsed  accordionHeader"
                                 type="button"
                                 data-toggle="collapse"
                                 data-target="#collapseReviews"
@@ -207,6 +218,9 @@
                         </div>
                     </div>
                 </div>
+
+                <hr class="categoryBreak">
+
             </div>
         </main>
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
