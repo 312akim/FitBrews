@@ -14,8 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&family=Open+Sans:wght@300;400;700&display=swap" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&family=Open+Sans:wght@300;400;700&display=swap" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -29,81 +29,124 @@
     <header>
         <nav class=" bg-dark ">
             <div class="container p-0">
-            <div class="navbar navbar-dark navbar-expand-md d-flex p-0">
-            <!--Mobile Nav Togler-->
-            <!--EndLogo--->
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" class="logo" alt="Fit Brews" width="200" />
-            </a>
-            <!--EndLogo--->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--Nav Links-->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drink Recipes</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Featured Drinks</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Body Building</a>
-                            <a class="dropdown-item" href="#">Breakfast</a>
-                            <a class="dropdown-item" href="#">Pre-Workout</a>
-                            <a class="dropdown-item" href="#">Post-Workout</a>
-                            <a class="dropdown-item" href="#">Meal Replacement</a>
-                            <a class="dropdown-item" href="#">Frozen Drinks</a>
-                            <a class="dropdown-item" href="#">Infused Waters</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+                <div class="navbar navbar-dark navbar-expand-md d-flex p-0">
+                    <!--Mobile Nav Togler-->
+                    <!--EndLogo--->
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" class="logo" alt="Fit Brews" width="200" />
+                    </a>
+                    <!--EndLogo--->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Nav Links-->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drink Recipes</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Featured Drinks</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Body Building</a>
+                                    <a class="dropdown-item" href="#">Breakfast</a>
+                                    <a class="dropdown-item" href="#">Pre-Workout</a>
+                                    <a class="dropdown-item" href="#">Post-Workout</a>
+                                    <a class="dropdown-item" href="#">Meal Replacement</a>
+                                    <a class="dropdown-item" href="#">Frozen Drinks</a>
+                                    <a class="dropdown-item" href="#">Infused Waters</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </nav>
         <!--End Nav Links-->
         <!-- Carousel Section-->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/HeroImage1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/HeroImage2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/HeroImage3.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/HeroImage4.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/HeroImage5.jpg" class="d-block w-100" alt="...">
-              </div>
+                <div class="carousel-item active">
+                    <div class="card bg-dark text-white">
+                        <img src="images/HeroImage1.jpg" class="d-block w-100" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card bg-dark text-white">
+                        <img src="images/HeroImage2.jpg" class="d-block w-100" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card bg-dark text-white">
+                        <img src="images/HeroImage3.jpg" class="d-block w-100" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="card bg-dark text-white">
+                        <img src="images/HeroImage4.jpg" class="d-block w-100" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card bg-dark text-white">
+                        <img src="images/HeroImage5.jpg" class="d-block w-100" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!--End Carousel-->
+        </div>
+        <!--End Carousel-->
     </header>
 
     <main>
         <articel class="featured-drinks">
-            <div class="container">
+            <div class="container p-0">
                 <div class="row">
                     <div class="col">
-                        
+
                     </div>
                 </div>
             </div>
@@ -111,24 +154,47 @@
     </main>
 
     <footer class="bg-dark text-secondary">
-        <div class="container">
+        <div class="container p-0">
             <div class="row">
-                <div class="col-sm">
-                    <h4>Footer Column 1</h4>
+                <div class="col-sm pr-5">
+                    <h5>Footer Column 1</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed rutrum enim. Aliquam tempor
-                        placerat rhoncus. Vestibulum mauris augue, aliquet in vehicula et, consectetur a quam. Ut
-                        tempus, sapien a finibus facilisis, elit diam auctor augue, sit amet porttitor dui risus sed
-                        orci.</p>
+                        placerat rhoncus.
+                    </p>
+                    <p>
+                        98 Adams St.  |  Kalispell  |  MT 59901
+                    </p>
+                    <p>(555) 555-5555</p>
                 </div>
-                <div class="col-sm">
-                    <h4>Footer Column 2</h4>
-                    <a class="navbar-brand" href="#">
+                <div class="col-sm d-sm-flex flex-sm-column px-5">
+                    <h5>Footer Column 2</h5>
+                    <a class="footer-logo mb-3" href="#">
                         <img src="images/logo.png" class="logo" alt="Fit Brews" width="100" />
                     </a>
+                    <p class="d-none d-sm-inline-block">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed rutrum enim. Aliquam tempor
+                        placerat rhoncus. </p>
+                    <ul class="social-icons p-0">
+                        <li class="social-icon">
+                            <a class="btn btn-social-icon btn-twitter">
+                                <span class="fa fa-twitter"></span>
+                              </a>
+                        </li>
+                        <li class="social-icon">
+                            <a class="btn btn-social-icon btn-instagram">
+                                <span class="fa fa-twitter"></span>
+                              </a>
+                        </li>
+                        <li class="social-icon">
+                            <a class="btn btn-social-icon btn-twitter">
+                                <span class="fa fa-facebook"></span>
+                              </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm">
-                    <h4>Footer Column 3</h4>
+                <div class="col-sm pl-5">
+                    <h5>Footer Column 3</h5>
                     <ul class="navbar-nav">
                         <li>About</li>
                         <li>Contact</li>
