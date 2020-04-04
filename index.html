@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&family=Open+Sans:wght@300;400;700&display=swap" />
-    <link rel="stylesheet" href=".css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -27,19 +27,21 @@
       </p>
     <![endif]-->
     <header>
-        <nav class="navbar navbar-dark navbar-expand-md bg-dark d-flex">
+        <nav class=" bg-dark ">
+            <div class="container p-0">
+            <div class="navbar navbar-dark navbar-expand-md d-flex p-0">
             <!--Mobile Nav Togler-->
             <!--EndLogo--->
-            <a class="navbar-brand ml-5" href="#">
-                <img src="images/logo.svg" class="logo" width="200px" alt="Fit Brews" />
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" class="logo" alt="Fit Brews" width="200" />
             </a>
             <!--EndLogo--->
-            <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarContent"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
                 aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--Nav Links-->
-            <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarContent">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -64,10 +66,78 @@
                     </li>
                 </ul>
             </div>
+            </div>
+        </div>
         </nav>
         <!--End Nav Links-->
+        <!-- Carousel Section-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/HeroImage1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/HeroImage2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/HeroImage3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/HeroImage4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/HeroImage5.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+          <!--End Carousel-->
     </header>
 
+    <main>
+        <articel class="featured-drinks">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        
+                    </div>
+                </div>
+            </div>
+        </articel>
+    </main>
+
+    <footer class="bg-dark text-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h4>Footer Column 1</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed rutrum enim. Aliquam tempor
+                        placerat rhoncus. Vestibulum mauris augue, aliquet in vehicula et, consectetur a quam. Ut
+                        tempus, sapien a finibus facilisis, elit diam auctor augue, sit amet porttitor dui risus sed
+                        orci.</p>
+                </div>
+                <div class="col-sm">
+                    <h4>Footer Column 2</h4>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" class="logo" alt="Fit Brews" width="100" />
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <h4>Footer Column 3</h4>
+                    <ul class="navbar-nav">
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="" async defer></script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
