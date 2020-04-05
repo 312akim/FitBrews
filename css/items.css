@@ -1,20 +1,33 @@
 .carousel-item img {
-    width: 100%;
-    height: auto;
-}
+  width: 100%;
+  height: auto; }
 
 .itemsCarouselCol {
-    padding: 0;
-}
+  padding: 0; }
 
 .itemHeader {
-    text-align: center;
-}
+  text-align: center; }
 
 .card {
-    text-align: center;
-}
+  text-align: center; }
 
 .card-body {
-    text-align: left;
-}
+  text-align: left;
+  background-color: #d5f6e7; }
+
+.categoryBreak {
+  padding: 0;
+  margin: 0;
+  margin-left: 20%;
+  width: 60%;
+  border: solid #1eb2a6 1px; }
+
+.backgroundLight {
+  background-color: #d5f6e7; }
+
+.removeMargin {
+  margin: 0; }
+
+.accordionHeader {
+  color: #1eb2a6; }
+

@@ -1,0 +1,44 @@
+$primary-color-dark: rgb(30, 178, 166);
+$primary-color-light: rgb(213, 246, 231);
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.itemsCarouselCol {
+    padding: 0;
+}
+
+.itemHeader {
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+}
+
+.card-body {
+    text-align: left;
+    background-color: $primary-color-light;
+}
+
+.categoryBreak {
+    padding: 0;
+    margin: 0;
+    margin-left: 50% - (60%/2);
+    width: 60%;
+    border: solid $primary-color-dark 1px;
+}
+
+.backgroundLight {
+    background-color: $primary-color-light;
+}
+
+.removeMargin {
+    margin: 0;
+}
+
+.accordionHeader {
+    color: $primary-color-dark;
+}
