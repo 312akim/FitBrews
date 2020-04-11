@@ -25,6 +25,10 @@ header {
     }
 
 }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
 .nav-item:hover {
     border-bottom: $tangerine 3px solid;
 }
@@ -47,10 +51,11 @@ header {
     padding-top: 3rem;
     font-family: $displayfont;
     font-weight: 700;
-    background-image: linear-gradient(to bottom, rgba($darkgreen, .8), rgba($darkgreen, .2));
+    background-image: linear-gradient(to bottom, rgba($darkgreen, .8), rgba($darkgreen, .3));
     .heading-thin {
-        font-weight: 300;
         font-family: $contentfont;
+        font-weight: 300;
+        font-size: 3vw;
     }
 }
 
@@ -58,17 +63,25 @@ header {
     max-height: 30rem;
     min-width: auto;
 }
-
-.card-img-overlay {
-    margin: 3rem 7.5rem;
-}
-
+//----Featurede Drinks----//
 .featured-drinks{
     margin: 3rem 0rem;
+    .card {
+        border: none;   
+    }
+    .card-title {
+        color: $watermelon;
+    }
 }
 
 .drinks-category-1{
     margin: 3rem 0rem;
+    .card {
+        border: none;   
+    }
+    .card-title {
+        color: $watermelon;
+    }
 }
 .drinks-category-2{
     margin: 3rem 0rem;

@@ -342,7 +342,7 @@ template {
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 h2 {
@@ -393,6 +393,10 @@ header {
   color: white;
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .nav-item:hover {
   border-bottom: #ffa34d 3px solid;
 }
@@ -413,15 +417,16 @@ header {
   width: 100%;
   height: 100%;
   padding-top: 3rem;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Anton", sans-serif;
   font-weight: 700;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 179, 166, 0.8)), to(rgba(30, 179, 166, 0.2)));
-  background-image: linear-gradient(to bottom, rgba(30, 179, 166, 0.8), rgba(30, 179, 166, 0.2));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 179, 166, 0.8)), to(rgba(30, 179, 166, 0.3)));
+  background-image: linear-gradient(to bottom, rgba(30, 179, 166, 0.8), rgba(30, 179, 166, 0.3));
 }
 
 .hero-title-overlay .heading-thin {
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-family: "Open Sans", sans-serif;
+  font-size: 3vw;
 }
 
 .hero-carousel img {
@@ -429,16 +434,28 @@ header {
   min-width: auto;
 }
 
-.card-img-overlay {
-  margin: 3rem 7.5rem;
-}
-
 .featured-drinks {
   margin: 3rem 0rem;
 }
 
+.featured-drinks .card {
+  border: none;
+}
+
+.featured-drinks .card-title {
+  color: #f77575;
+}
+
 .drinks-category-1 {
   margin: 3rem 0rem;
+}
+
+.drinks-category-1 .card {
+  border: none;
+}
+
+.drinks-category-1 .card-title {
+  color: #f77575;
 }
 
 .drinks-category-2 {
@@ -473,7 +490,7 @@ footer p {
   padding: .25rem .5rem;
   margin-right: .5rem;
   width: 75%;
-  font: "Open Sans", sans-serif;
+  font: "Roboto", sans-serif;
   color: #a3a3a3;
 }
 
