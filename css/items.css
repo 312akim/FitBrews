@@ -31,3 +31,11 @@
 .accordionHeader {
   color: #1eb2a6; }
 
+@media (min-width: 738px) {
+  main {
+    font-size: 1.1rem; }
+  .card-body {
+    padding-left: 35%;
+    text-align: left; }
+  .accordion .card-header .btn {
+    font-size: 1.2rem; } }

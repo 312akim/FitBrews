@@ -1,32 +1,18 @@
 @use 'normalize/normalize';
 .card-img-overlay {
-  margin: 0 3rem 3rem 3rem;
-}
+  margin: 0 3rem 3rem 3rem; }
 
 h5 {
   font-size: 1rem;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
+  align-self: flex-start; }
 
 .social-icons {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.social-icons .social-icon {
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
-}
+  display: flex; }
+  .social-icons .social-icon {
+    align-items: space-between; }
 
 footer {
-  padding: 2rem 0;
-}
-
-footer p {
-  font-size: .85rem;
-}
-/*# sourceMappingURL=style.css.map */
+  padding: 2rem 0; }
+  footer p {
+    font-size: .85rem; }
