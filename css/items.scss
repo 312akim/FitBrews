@@ -42,3 +42,19 @@ $primary-color-light: rgb(213, 246, 231);
 .accordionHeader {
     color: $primary-color-dark;
 }
+
+@media (min-width: 738px) {
+    main {
+        font-size: 1.1rem;
+    }
+
+    .card-body  {
+        padding-left: 35%;
+        text-align: left;
+    }  
+    
+    .accordion .card-header .btn {
+        font-size: 1.2rem;
+      }
+    //Need to get Main {} body to align background size with header
+}
