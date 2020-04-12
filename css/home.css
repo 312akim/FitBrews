@@ -8,6 +8,7 @@
 html {
   line-height: 1.15;
   /* 1 */
+  font-size: 62.5%;
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
@@ -350,23 +351,25 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1rem;
+h4, h5 {
+  font-size: 1.75rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
 a {
   text-decoration: none;
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 1.6rem;
 }
 
 header {
@@ -430,12 +433,18 @@ header {
 }
 
 .hero-carousel img {
-  max-height: 30rem;
+  max-height: 50rem;
   min-width: auto;
 }
 
 .featured-drinks {
   margin: 3rem 0rem;
+}
+
+.featured-drinks h2 {
+  padding-left: 1rem;
+  color: #1eb3a6;
+  font-weight: 300;
 }
 
 .featured-drinks .card {
@@ -444,6 +453,7 @@ header {
 
 .featured-drinks .card-title {
   color: #f77575;
+  font-weight: 300;
 }
 
 .drinks-category-1 {
@@ -463,7 +473,7 @@ header {
 }
 
 footer {
-  padding: 2rem 0;
+  padding: 3rem 0 5rem 0;
   background-color: #1eb3a6;
   color: white;
 }
@@ -474,7 +484,7 @@ footer h5 {
 }
 
 footer p {
-  font-size: .85rem;
+  font-size: 1.4rem;
 }
 
 .footer-email-form {
@@ -499,7 +509,7 @@ footer p {
   background: none;
   border-radius: .2rem;
   color: white;
-  padding: .25rem 0;
+  padding: 1rem 0;
   width: 25%;
   -webkit-transition: opacity ease-in-out .5s;
   transition: opacity ease-in-out .5s;
@@ -518,7 +528,7 @@ footer p {
 }
 
 .social-icons .social-icon {
-  margin-right: 2rem;
+  margin-right: 1rem;
   -webkit-transition: opacity ease-in-out .5s;
   transition: opacity ease-in-out .5s;
   opacity: 1;
@@ -537,5 +547,9 @@ footer p {
 
 .support-item a:hover {
   opacity: .7;
+}
+
+.container {
+  padding: 0;
 }
 /*# sourceMappingURL=home.css.map */
