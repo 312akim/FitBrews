@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&family=Open+Sans:wght@300;400;700&display=swap" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css" />
 </head>
 
 <body>
@@ -27,23 +28,23 @@
       </p>
     <![endif]-->
     <header>
-        <nav class=" bg-dark ">
+        <nav class="main-nav">
             <div class="container p-0">
-                <div class="navbar navbar-dark navbar-expand-md d-flex p-0">
+                <div class="navbar navbar-expand-md">
                     <!--Mobile Nav Togler-->
                     <!--EndLogo--->
                     <a class="navbar-brand" href="#">
-                        <img src="images/logo.png" class="logo" alt="Fit Brews" width="200" />
+                        <img src="images/logo-drk.png" class="logo" alt="Fit Brews" width="200" />
                     </a>
                     <!--EndLogo--->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
                         aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon" stroke=""></span>
                     </button>
                     <!--Nav Links-->
                     <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
                         <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown active">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drink Recipes</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -70,135 +71,389 @@
             </div>
         </nav>
         <!--End Nav Links-->
-        <!-- Carousel Section-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card bg-dark text-white">
-                        <img src="images/HeroImage1.jpg" class="d-block w-100" alt="...">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text">Last updated 3 mins ago</p>
+        <!-- Hero Carousel Section-->
+        <section class="hero">
+            <div class="hero-title-overlay">
+                <h1>Fit Brews <br>
+                    <span class="heading-thin">Blending Health and Tech in 2020 </span>
+                </h1>
+            </div>
+            <div id="heroCarousel" class="carousel slide hero-carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#heroCarousel" data-slide-to="1"></li>
+                    <li data-target="#heroCarousel" data-slide-to="2"></li>
+                    <li data-target="#heroCarousel" data-slide-to="3"></li>
+                    <li data-target="#heroCarousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img src="images/HeroImage1.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card bg-dark text-white">
-                        <img src="images/HeroImage2.jpg" class="d-block w-100" alt="...">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                    <div class="carousel-item">
+                         <div class="card">
+                            <img src="images/HeroImage2.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card bg-dark text-white">
-                        <img src="images/HeroImage3.jpg" class="d-block w-100" alt="...">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="images/HeroImage3.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-
-                </div>
-                <div class="carousel-item">
-                    <div class="card bg-dark text-white">
-                        <img src="images/HeroImage4.jpg" class="d-block w-100" alt="...">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="images/HeroImage4.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card bg-dark text-white">
-                        <img src="images/HeroImage5.jpg" class="d-block w-100" alt="...">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="images/HeroImage5.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--End Carousel-->
+        </section>
+        <!--End Hereo Carousel-->
     </header>
-
     <main>
-        <articel class="featured-drinks">
-            <div class="container p-0">
-                <div class="row">
-                    <div class="col">
-
+        <section class="featured-drinks">
+            <div class="container">
+                <h2 class="drink-category">Featured Drinks</h2>
+                <div id="featuredCarouselControl" class="carousel slide carousel-fade" data-ride="carousel"
+                    data-interval="false" data-wrap="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h5>
+                                            <img class="card-img" src="images/categoryPhoto1.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h5>
+                                            <img class="card-img" src="images/categoryPhoto2.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h5>
+                                            <img class="card-img" src="images/categoryPhoto3.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h5>
+                                            <img class="card-img" src="images/categoryPhoto4.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h5>
+                                            <img class="card-img" src="images/categoryPhoto5.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content. </p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h3>
+                                            <img class="card-img" src="images/categoryPhoto6.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <a class="carousel-control-prev featured-control-prev" href="#featuredCarouselControl" role="button" data-slide="prev">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next featured-control-vext" href="#featuredCarouselControl" role="button" data-slide="next">
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-        </articel>
+        </section>
+        <hr>
+        <section class="drinks-category-1">
+            <div class="container">
+                <h2 class="drink-category">Most Popular Summer Recipes</h2>
+                <div id="featuredCarouselControl" class="carousel slide carousel-fade" data-ride="carousel"
+                    data-interval="false" data-wrap="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h5>
+                                            <img class="card-img" src="images/categoryPhoto1.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h5>
+                                            <img class="card-img" src="images/categoryPhoto2.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h5>
+                                            <img class="card-img" src="images/categoryPhoto3.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h5>
+                                            <img class="card-img" src="images/categoryPhoto4.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h5>
+                                            <img class="card-img" src="images/categoryPhoto5.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h3>
+                                            <img class="card-img" src="images/categoryPhoto6.png" alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev featured-control-prev" href="#featuredCarouselControl" role="button" data-slide="prev">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next featured-control-vext" href="#featuredCarouselControl" role="button" data-slide="next">
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- <section class="drinks-category-2">
+            <div class="container">
+                <div id="featuredCarouselControl" class="carousel slide carousel-fade" data-ride="carousel"
+                    data-interval="false" data-wrap="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <img class="card-img-top" src="..." alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <img class="card-img-top" src="..." alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <img class="card-img-top" src="..." alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-warning">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <img class="card-img-top" src="..." alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <img class="card-img" src="..." alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <img class="card-img-top" src="..." alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-info">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <img class="card-img-top" src="..." alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <img class="card-img" src="..." alt="Card image cap">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#featuredCarouselControl" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#featuredCarouselControl" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section> -->
     </main>
 
-    <footer class="bg-dark text-secondary">
+    <footer>
         <div class="container p-0">
             <div class="row">
                 <div class="col-sm pr-5">
-                    <h5>Footer Column 1</h4>
+                    <h5>Contact Us</h5>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed rutrum enim. Aliquam tempor
-                        placerat rhoncus.
+                        Want to have all the latest and greatest recipes sent directyl to your inbox?
                     </p>
+                    <form action="#" class="footer-email-form">
+                        <input type="text" id="newsletterSubmit">
+                        <button type="submit" class="fa fa-paper-plane"></button>
+                    </form>
                     <p>
-                        98 Adams St.  |  Kalispell  |  MT 59901
+                        98 Adams St. | Kalispell | MT 59901
+                        <br>
+                        (555) 555-5555
                     </p>
-                    <p>(555) 555-5555</p>
                 </div>
                 <div class="col-sm d-sm-flex flex-sm-column px-5">
-                    <h5>Footer Column 2</h5>
+                    <h5>Connect With Us</h5>
                     <a class="footer-logo mb-3" href="#">
                         <img src="images/logo.png" class="logo" alt="Fit Brews" width="100" />
                     </a>
                     <p class="d-none d-sm-inline-block">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed rutrum enim. Aliquam tempor
-                        placerat rhoncus. </p>
+                        Connect with us and share your favorite drink recipes! </p>
                     <ul class="social-icons p-0">
                         <li class="social-icon">
-                            <a class="btn btn-social-icon btn-twitter">
+                            <a class="btn btn-social-icon">
                                 <span class="fa fa-twitter"></span>
-                              </a>
+                            </a>
                         </li>
                         <li class="social-icon">
-                            <a class="btn btn-social-icon btn-instagram">
-                                <span class="fa fa-twitter"></span>
-                              </a>
+                            <a class="btn btn-social-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
                         </li>
                         <li class="social-icon">
-                            <a class="btn btn-social-icon btn-twitter">
-                                <span class="fa fa-facebook"></span>
-                              </a>
+                            <a class="btn btn-social-icon">
+                                <span class="fa fa-instagram"></span>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm pl-5">
-                    <h5>Footer Column 3</h5>
-                    <ul class="navbar-nav">
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>FAQ</li>
+                    <h5>Support</h5>
+                    <ul class="navbar-nav support">
+                        <li class="support-item">
+                            <a href="#" class="support-link">About</a>
+                        </li>
+                        <li class="support-item">
+                            <a href="#" class="support-link">Contact</a>
+                        </li>
+                        <li class="support-item">
+                            <a href="#" class="support-link">FAQ</a>
+                        </li>
                     </ul>
                 </div>
             </div>
