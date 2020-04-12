@@ -1,3 +1,5 @@
+@import '../settings/settings';
+
 h1 {
     font-size: 5vw;
 }
@@ -17,6 +19,7 @@ h4, h5 {
 p {
     font-size: 1.5rem;
     line-height: 1.4;
+    color: $darkgray;
 }
 
 a {
@@ -25,4 +28,9 @@ a {
 }
 button {
     font-size: 1.6rem;
+}
+
+hr {
+    width: 80%;
+    border-style: dotted;
 }
