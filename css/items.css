@@ -1,0 +1,41 @@
+.carousel-item img {
+  width: 100%;
+  height: auto; }
+
+.itemsCarouselCol {
+  padding: 0; }
+
+.itemHeader {
+  text-align: center; }
+
+.card {
+  text-align: center; }
+
+.card-body {
+  text-align: left;
+  background-color: #d5f6e7; }
+
+.categoryBreak {
+  padding: 0;
+  margin: 0;
+  margin-left: 20%;
+  width: 60%;
+  border: solid #1eb2a6 1px; }
+
+.backgroundLight {
+  background-color: #d5f6e7; }
+
+.removeMargin {
+  margin: 0; }
+
+.accordionHeader {
+  color: #1eb2a6; }
+
+@media (min-width: 738px) {
+  main {
+    font-size: 1.1rem; }
+  .card-body {
+    padding-left: 35%;
+    text-align: left; }
+  .accordion .card-header .btn {
+    font-size: 1.2rem; } }
