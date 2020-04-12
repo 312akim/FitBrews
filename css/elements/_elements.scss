@@ -1,0 +1,36 @@
+@import '../settings/settings';
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4, h5 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: $darkgray;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+button {
+    font-size: 1.6rem;
+}
+
+hr {
+    width: 80%;
+    border-style: dotted;
+}
