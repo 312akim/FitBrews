@@ -342,6 +342,10 @@ template {
   display: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 5vw;
 }
@@ -376,6 +380,7 @@ button {
 hr {
   width: 80%;
   border-style: dotted;
+  border-color: #d4f8e8;
 }
 
 header {
@@ -454,18 +459,31 @@ header {
 }
 
 .drink-category {
+  margin: 2rem 0;
+}
+
+.drink-category-title {
   padding-left: 1rem;
   color: #1eb3a6;
   font-weight: 300;
 }
 
-.featured-drinks {
-  margin: 7.5rem 0rem;
+.card {
+  border: none;
 }
 
-.featured-drinks .card {
-  border: none;
-  margin-top: 2rem;
+.btn {
+  opacity: 1;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.featured-drinks {
+  margin: 7.5rem 0rem;
 }
 
 .featured-drinks .card-title {
@@ -478,53 +496,81 @@ header {
   margin-bottom: 1rem;
 }
 
-.featured-drinks .btn {
-  border: #f77575 1px solid;
-  border-radius: 0.5rem;
-  color: #f77575;
-  font-size: 1.4rem;
-  opacity: 1;
-  -webkit-transition: opacity ease-in-out 0.3s;
-  transition: opacity ease-in-out 0.3s;
-}
-
-.featured-drinks .btn:hover {
-  opacity: 0.7;
-}
-
 .featured-drinks .carousel-control-prev {
   margin-left: -10rem;
-  color: #d4f8e8;
+  color: #1eb3a6;
   font-size: 3rem;
 }
 
 .featured-drinks .carousel-control-next {
   margin-right: -10rem;
-  color: #d4f8e8;
+  color: #1eb3a6;
   font-size: 3rem;
 }
 
-.drinks-category-1 {
+.featured-drinks .btn {
+  background-color: #f77575;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.drinks-category {
   margin: 7.5rem 0rem;
 }
 
-.drinks-category-1 .card {
-  border: none;
-  margin-top: 2rem;
+.drinks-category .card-title {
+  color: #ffa34d;
 }
 
-.drinks-category-1 .card-title {
-  color: #f77575;
+.drinks-category .card-img {
+  border-radius: 50%;
+  margin: 1.5rem 0;
 }
 
-.drinks-category-2 {
-  margin: 3rem 0rem;
+.drinks-category .btn {
+  color: #ffa34d;
+  border: #ffa34d 1px solid;
+  font-size: 1.4rem;
+}
+
+.reviews {
+  background-color: #d4f8e8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12rem;
+  padding: 12rem 0;
+}
+
+.reviews .blockquote {
+  width: 60%;
+}
+
+.reviews .blockquote p {
+  font-size: 2rem;
+}
+
+.reviews .blockquote footer {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: 1.4rem;
 }
 
 footer {
   padding: 3rem 0 5rem 0;
   background-color: #1eb3a6;
   color: white;
+}
+
+footer .container {
+  margin-left: 18%;
 }
 
 footer h5 {
@@ -555,6 +601,7 @@ footer p {
 }
 
 .footer-email-form button {
+  font-size: 1.8rem;
   border: white 1px solid;
   background: none;
   border-radius: 0.2rem;
@@ -578,10 +625,14 @@ footer p {
 }
 
 .social-icons .social-icon {
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   -webkit-transition: opacity ease-in-out 0.5s;
   transition: opacity ease-in-out 0.5s;
   opacity: 1;
+}
+
+.social-icons .social-icon a {
+  font-size: 1.5rem;
 }
 
 .social-icons .social-icon:hover {
