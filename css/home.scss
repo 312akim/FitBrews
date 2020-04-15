@@ -80,19 +80,29 @@ header {
 }
 //----Drink Categories----//
 .drink-category {
-    padding-left: 1rem;
-    color: $darkgreen;
-    font-weight: 300;
-  }
+  margin: 2rem 0;
+}
+.drink-category-title {
+  padding-left: 1rem;
+  color: $darkgreen;
+  font-weight: 300;
+}
+.card {
+  border: none;
+}
+
+.btn {
+  opacity: 1;
+  transition: opacity ease-in-out 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
 
 //----Featurede Drinks----//
 .featured-drinks {
   margin: 7.5rem 0rem;
-
-  .card {
-    border: none;
-    margin-top: 2rem;
-  }
 
   .card-title {
     color: $watermelon;
@@ -104,54 +114,70 @@ header {
     margin-bottom: 1rem;
   }
 
-  .btn {
-    border: $watermelon 1px solid;
-    border-radius: 0.5rem;
-    color: $watermelon;
-    font-size: 1.4rem;
-    opacity: 1;
-    transition: opacity ease-in-out 0.3s;
-  }
-
-  .btn:hover {
-    opacity: 0.7;
-  }
-
   .carousel-control-prev {
     margin-left: -10rem;
-    color: $lightgreen;
+    color: $darkgreen;
     font-size: 3rem;
   }
 
   .carousel-control-next {
     margin-right: -10rem;
-    color: $lightgreen;
+    color: $darkgreen;
     font-size: 3rem;
   }
+  .btn {
+    background-color: $watermelon;
+    color: white;
+    font-size: 1.4rem;
+  }
 }
 
-.drinks-category-1 {
+.drinks-category {
   margin: 7.5rem 0rem;
 
-  .card {
-    border: none;
-    margin-top: 2rem;
-  }
-
   .card-title {
-    color: $watermelon;
+    color: $tangerine;
+  }
+  .card-img {
+    border-radius: 50%;
+    margin: 1.5rem 0;
+  }
+  .btn {
+    color: $tangerine;
+    border: $tangerine 1px solid;
+    font-size: 1.4rem;
   }
 }
 
-.drinks-category-2 {
-  margin: 3rem 0rem;
+.reviews {
+  background-color: $lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  padding: 12rem 0;
+  .blockquote {
+    width: 60%;
+    p {
+      font-size: 2rem;
+    }
+    footer {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      font-size: 1.4rem
+    }
+  }
+
 }
 
 footer {
   padding: 3rem 0 5rem 0;
   background-color: $darkgreen;
   color: white;
-
+  .container {
+    margin-left: 18%;
+  }
   h5 {
     text-transform: uppercase;
     color: $lightgreen;
@@ -178,6 +204,7 @@ footer {
   }
 
   button {
+    font-size: 1.8rem;
     border: white 1px solid;
     background: none;
     border-radius: 0.2rem;
@@ -196,11 +223,15 @@ footer {
 .social-icons {
   list-style: none;
   display: flex;
+  
 
   .social-icon {
-    margin-right: 1rem;
+    margin-right: 2.5rem;
     transition: opacity ease-in-out 0.5s;
     opacity: 1;
+    a {
+      font-size: 1.5rem;
+    }
   }
 
   .social-icon:hover {

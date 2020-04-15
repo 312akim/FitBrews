@@ -1,4 +1,7 @@
 @import '../settings/settings';
+body {
+    overflow-x: hidden;
+}
 
 h1 {
     font-size: 5vw;
@@ -33,4 +36,5 @@ button {
 hr {
     width: 80%;
     border-style: dotted;
+    border-color: $lightgreen;
 }
