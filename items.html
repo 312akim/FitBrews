@@ -10,9 +10,51 @@
         <title>Item Name</title>
     </head>
     <body>
-        <nav></nav>
-
         <header>
+            <nav class="main-nav">
+                <div class="container p-0">
+                    <div class="navbar navbar-expand-md">
+                        <!--Mobile Nav Togler-->
+                        <!--EndLogo--->
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo-drk.png" class="logo" alt="Fit Brews" width="200" />
+                        </a>
+                        <!--EndLogo--->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon" stroke=""></span>
+                        </button>
+                        <!--Nav Links-->
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drink Recipes</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Featured Drinks</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Body Building</a>
+                                        <a class="dropdown-item" href="#">Breakfast</a>
+                                        <a class="dropdown-item" href="#">Pre-Workout</a>
+                                        <a class="dropdown-item" href="#">Post-Workout</a>
+                                        <a class="dropdown-item" href="#">Meal Replacement</a>
+                                        <a class="dropdown-item" href="#">Frozen Drinks</a>
+                                        <a class="dropdown-item" href="#">Infused Waters</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--End Nav Links-->
+
             <div class="container">
                 <div class="row row-content">
                     <div class="col mx-auto itemsCarouselCol">
@@ -53,167 +95,171 @@
                     </div>
                 </div>
             </div>
-            <div class="itemHeader backgroundLight">
-                <h2 class="removeMargin">Item Name</h2>
-                <button class="my-4" id="saveRecipeButton">Save Recipe</button>
-            </div>
-            <hr class="categoryBreak">
+            <!--End Carousel-->
         </header>
         <main>
-            <div class="accordion" id="itemsAccordion">
-                <div class="card">
-                    <div class="card-header" id="headingNutrition">
-                        <h2 class="mb-0"></h2>
-                            <button
-                                class="btn btn-link collapsed accordionHeader"
-                                type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseNutrition"
-                                aria-expanded="true"
-                                aria-controls="collapseNutrition"
-                            >
-                                Nutrition
-                            </button>
-                        </h2>
-                    </div>
-                    <div
-                        id="collapseNutrition"
-                        class="accordion-body collapse"
-                        aria-labelledby="headingNutrition"
-                        data-target="itemsAccordion"
-                    >
-                        <div class="card-body">
-                            <div>Calories: 300</div>
-                            <div>Protein: 30g Carbs: 25g Fat: 10g</div>
+            <div class="container">
+                <div class="row row-content">
+                    <div class="col">
+                        <div class="itemHeader backgroundLight">
+                            <h2 class="removeMargin">Item Name</h2>
+                            <button class="my-4" id="saveRecipeButton">Save Recipe</button>
                         </div>
-                    </div>
-                </div>
+                        <hr class="categoryBreak">
+                        <div class="accordion" id="itemsAccordion">
+                            <div class="card">
+                                <div class="card-header" id="headingNutrition">
+                                    <h2 class="mb-0"></h2>
+                                        <button
+                                            class="btn btn-link collapsed accordionHeader"
+                                            type="button"
+                                            data-toggle="collapse"
+                                            data-target="#collapseNutrition"
+                                            aria-expanded="true"
+                                            aria-controls="collapseNutrition"
+                                        >
+                                            Nutrition
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div
+                                    id="collapseNutrition"
+                                    class="accordion-body collapse"
+                                    aria-labelledby="headingNutrition"
+                                    data-target="itemsAccordion"
+                                >
+                                    <div class="card-body">
+                                        <div>Calories: 300</div>
+                                        <div>Protein: 30g Carbs: 25g Fat: 10g</div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <hr class="categoryBreak">
+                            <hr class="categoryBreak">
 
-                <div class="card">
-                    <div class="card-header" id="headingDescription">
-                        <h2 class="mb-0">
-                            <button
-                                class="btn btn-link collapsed accordionHeader"
-                                type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseDescription"
-                                aria-expanded="false"
-                                aria-controls="collapseDescription"
-                            >
-                                Description
-                            </button>
-                        </h2>
-                    </div>
-                    <div
-                        id="collapseDescription"
-                        class="accordion-body collapse"
-                        aria-labelledby="headingDescription"
-                        data-target="itemsAccordion"
-                    >
-                        <div class="card-body">
-                            <div>This refreshing and tasty drink is sure to be a hit at any party!</div>
-                        </div>
-                    </div>
-                </div>
+                            <div class="card">
+                                <div class="card-header" id="headingDescription">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link collapsed accordionHeader"
+                                            type="button"
+                                            data-toggle="collapse"
+                                            data-target="#collapseDescription"
+                                            aria-expanded="false"
+                                            aria-controls="collapseDescription"
+                                        >
+                                            Description
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div
+                                    id="collapseDescription"
+                                    class="accordion-body collapse"
+                                    aria-labelledby="headingDescription"
+                                    data-target="itemsAccordion"
+                                >
+                                    <div class="card-body">
+                                        <div>This refreshing and tasty drink is sure to be a hit at any party!</div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <hr class="categoryBreak">
+                            <hr class="categoryBreak">
 
-                <div class="card">
-                    <div class="card-header" id="headingIngredients">
-                        <h2 class="mb-0">
-                            <button
-                                class="btn btn-link collapsed accordionHeader"
-                                type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseIngredients"
-                                aria-expanded="false"
-                                aria-controls="collapseIngredients"
-                            >
-                                Ingredients
-                            </button>
-                        </h2>
-                    </div>
-                    <div
-                        id="collapseIngredients"
-                        class="accordion-body collapse"
-                        aria-labelledby="headingIngredients"
-                        data-target="itemsAccordion"
-                    >
-                        <div class="card-body">
-                            <ul>
-                                <li>Strawberries</li>
-                                <li>30g Sugar</li>
-                                <li>1 Cup of Ice</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                            <div class="card">
+                                <div class="card-header" id="headingIngredients">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link collapsed accordionHeader"
+                                            type="button"
+                                            data-toggle="collapse"
+                                            data-target="#collapseIngredients"
+                                            aria-expanded="false"
+                                            aria-controls="collapseIngredients"
+                                        >
+                                            Ingredients
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div
+                                    id="collapseIngredients"
+                                    class="accordion-body collapse"
+                                    aria-labelledby="headingIngredients"
+                                    data-target="itemsAccordion"
+                                >
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Strawberries</li>
+                                            <li>30g Sugar</li>
+                                            <li>1 Cup of Ice</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
 
-                <hr class="categoryBreak">
+                            <hr class="categoryBreak">
 
-                <div class="card">
-                    <div class="card-header" id="headingDirections">
-                        <h2 class="mb-0">
-                            <button
-                                class="btn btn-link collapsed accordionHeader"
-                                type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseDirections"
-                                aria-expanded="false"
-                                aria-controls="collapseDirections"
-                            >
-                                Directions
-                            </button>
-                        </h2>
-                    </div>
-                    <div
-                        id="collapseDirections"
-                        class="accordion-body collapse"
-                        aria-labelledby="headingDirections"
-                        data-target="itemsAccordion"
-                    >
-                        <div class="card-body">
-                            <div>Step 1</div>
-                            <div>-Wash and remove strawberry stems</div>
-                            <div>Step 2</div>
-                            <div>-Add protein, strawberries, sugar and ice to blender</div>
-                            <div>Step 3</div>
-                            <div>-Blend until smooth</div>
-                            <ol>
-                                <li>Wash and remove strawberry stems</li>
-                                <li>Add protein, strawberries, sugar and ice to blender</li>
-                                <li>Blend until smooth</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
+                            <div class="card">
+                                <div class="card-header" id="headingDirections">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link collapsed accordionHeader"
+                                            type="button"
+                                            data-toggle="collapse"
+                                            data-target="#collapseDirections"
+                                            aria-expanded="false"
+                                            aria-controls="collapseDirections"
+                                        >
+                                            Directions
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div
+                                    id="collapseDirections"
+                                    class="accordion-body collapse"
+                                    aria-labelledby="headingDirections"
+                                    data-target="itemsAccordion"
+                                >
+                                    <div class="card-body">
+                                        <div>Step 1</div>
+                                        <div>-Wash and remove strawberry stems</div>
+                                        <div>Step 2</div>
+                                        <div>-Add protein, strawberries, sugar and ice to blender</div>
+                                        <div>Step 3</div>
+                                        <div>-Blend until smooth</div>
+                                        <ol>
+                                            <li>Wash and remove strawberry stems</li>
+                                            <li>Add protein, strawberries, sugar and ice to blender</li>
+                                            <li>Blend until smooth</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
 
-                <hr class="categoryBreak">
+                            <hr class="categoryBreak">
 
-                <div class="card">
-                    <div class="card-header" id="headingReviews">
-                        <h2 class="mb-0">
-                            <button
-                                class="btn btn-link collapsed  accordionHeader"
-                                type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseReviews"
-                                aria-expanded="false"
-                                aria-controls="collapseReviews"
-                            >
-                                Reviews
-                            </button>
-                        </h2>
-                    </div>
-                    <div
-                        id="collapseReviews"
-                        class="accordion-body collapse"
-                        aria-labelledby="headingReviews"
-                        data-target="itemsAccordion"
-                    >
-                        <div class="card-body">
+                            <div class="card">
+                                <div class="card-header" id="headingReviews">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link collapsed  accordionHeader"
+                                            type="button"
+                                            data-toggle="collapse"
+                                            data-target="#collapseReviews"
+                                            aria-expanded="false"
+                                            aria-controls="collapseReviews"
+                                        >
+                                            Reviews
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div
+                                    id="collapseReviews"
+                                    class="accordion-body collapse"
+                                    aria-labelledby="headingReviews"
+                                    data-target="itemsAccordion"
+                                >
+                                    <div class="card-body">
                             <div>"So refreshing!" - John S.</div>
                         </div>
                     </div>
@@ -221,8 +267,84 @@
 
                 <hr class="categoryBreak">
 
+                </div>
+                    </div>
+                </div>
             </div>
+            <section class="reviews">
+                <blockquote class="blockquote">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante"</p>
+                    <footer class="blockquote-footer">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+            </section>
         </main>
+
+        <footer>
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-sm pr-5">
+                        <h5>Contact Us</h5>
+                        <p>
+                            Want to have all the latest and greatest recipes sent directyl to your inbox?
+                        </p>
+                        <form action="#" class="footer-email-form">
+                            <input type="text" id="newsletterSubmit">
+                            <button type="submit" class="fa fa-paper-plane"></button>
+                        </form>
+                        <p>
+                            98 Adams St. | Kalispell | MT 59901
+                            <br>
+                            (555) 555-5555
+                        </p>
+                    </div>
+                    <div class="col-sm d-sm-flex flex-sm-column px-5">
+                        <h5>Connect With Us</h5>
+                        <a class="footer-logo mb-3" href="#">
+                            <img src="images/logo.png" class="logo" alt="Fit Brews" width="100" />
+                        </a>
+                        <p class="d-none d-sm-inline-block">
+                            Connect with us and share your favorite drink recipes! </p>
+                        <ul class="social-icons p-0">
+                            <li class="social-icon">
+                                <a class="btn btn-social-icon">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li class="social-icon">
+                                <a class="btn btn-social-icon">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social-icon">
+                                <a class="btn btn-social-icon">
+                                    <span class="fa fa-instagram"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm pl-5">
+                        <h5>Support</h5>
+                        <ul class="navbar-nav support">
+                            <li class="support-item">
+                                <a href="#" class="support-link">About</a>
+                            </li>
+                            <li class="support-item">
+                                <a href="#" class="support-link">Contact</a>
+                            </li>
+                            <li class="support-item">
+                                <a href="#" class="support-link">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
